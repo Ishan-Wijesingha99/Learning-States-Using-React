@@ -19,18 +19,28 @@ export const StateComponent = function() {
 
 
 
-    const [isImportant, setIsImportant] = React.useState('Yes')
+    const [isImportant, setIsImportant] = React.useState('Yes!')
+
+    // how cool is this! the sole purpose of the setIsImportant function, is to change the value of isImportant whenever it is called
 
     const handleClick = function() {
-        setIsImportant('Yes');
+        
+        if(isImportant === 'Yes!') {
+            // if button says 'Yes!' , change it to 'No!
+            setIsImportant('No!');
+        } else if(isImportant === 'No!') {
+            // if button says 'No!' , change it to 'Yes!'
+            setIsImportant('Yes!')
+        }
     }
+
 
 
     return (
         <div className="state">
             <h1 className="state--title">Is state important to know?</h1>
             <div className="state--value" onClick={handleClick}>
-                <h1>{variable}</h1>
+                <h1>{isImportant}</h1>
             </div>
         </div>
     )
