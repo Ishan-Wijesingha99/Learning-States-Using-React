@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Counter } from './components/Counter';
 import { StateComponent } from './components/StateComponent';
 import './index.css'
 
@@ -10,6 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <StateComponent />
+
+      <Counter />
   </React.StrictMode>
 )
 
