@@ -1,0 +1,17 @@
+
+
+Props...
+
+Props defined as attributes of a functional componenet, and they are basically passed into a functional component and are used inside the functional component, much like the parameters of a functional
+
+These props should be immutable however, they should not be modified ONCE THEY ARE PASSED INTO THE FUNCTIONAL COMPONENT.
+
+
+
+States...
+
+State refers to any variables INSIDE THE FUNCTIONAL COMPONENT that are changing all the time as the user interacts with the webpage
+
+
+
+
