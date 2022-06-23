@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Counter } from './components/Counter';
+import { GoingOut } from './components/GoingOut';
 import { StateComponent } from './components/StateComponent';
 import './index.css'
 
@@ -13,6 +14,8 @@ root.render(
       <StateComponent />
 
       <Counter />
+
+      <GoingOut />
   </React.StrictMode>
 )
 
