@@ -10,11 +10,11 @@ export const Counter = function() {
     const [counterValue, setCounterValue] = React.useState(0);
 
     const addCounter = function() {
-        setCounterValue(counterValue + 1); // NEVER use counterValue++
+        setCounterValue((prevCount) => prevCount + 1); // NEVER use counterValue++
     }
 
     const minusCounter = function() {
-        setCounterValue(counterValue - 1); // NEVER use counterValue--
+        setCounterValue((prevCount) => prevCount - 1); // NEVER use counterValue--
     }
 
 
